@@ -6,3 +6,6 @@
  <!-- Day Two  -->
  Design Database
  Create Model
+
+<!-- Day Three -->
+Install Passport Auth
