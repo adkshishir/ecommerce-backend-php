@@ -325,64 +325,65 @@ return [
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
         ],
+       
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text'    => 'multilevel',
+            'text'    => 'Parent Category',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Add New',
+                    'url'  => '/parent-activity/add',
                 ],
                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
+                    'text' => 'View',
+                    'url'  => '/parent-activity',
                 ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
+            
             ],
         ],
-        ['header' => 'labels'],
         [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
+            'text'    => 'Category',
+            'url'     => '/category',
+            'icon'    => 'fas fa-fw fa-share',
+
+            'submenu' => [
+                [
+                    'text' => 'Add New',
+                    'url'  => '/category/add',
+                ],
+                [
+                    'text' => 'View',
+                    'url'  => '/category',
+                ],
+               
+            ],
         ],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
+            'text' => 'Product',
+            'url'  => '/product',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu'=>[
+                [
+                    'text' => 'Add New',
+                    'url'  => '/product/add',
+                ],
+                [
+                    'text' => 'View',
+                    'url'  => '/product',
+                ],
+            ]
+        ],
+        
+        ['header'=>'Auth'],
+        [
+            'text' => 'Login',
+            'url'  => 'login',
+            'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
+            'text' => 'change_password',
+            'url'  => '/password/change',
+            'icon' => 'fas fa-fw fa-lock',
         ],
     ],
 
