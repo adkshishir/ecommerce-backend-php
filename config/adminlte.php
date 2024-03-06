@@ -86,7 +86,7 @@ return [
     'auth_logo' => [
         'enabled' => false,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/',
+            'path' => '/favicon.ico',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 50,
@@ -109,12 +109,13 @@ return [
     'preloader' => [
         'enabled' => true,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/',
+            'path' => '/logo.png',
             'alt' => 'AdminLTE Preloader Image',
             'effect' => 'animation__shake',
             'width' => 60,
             'height' => 60,
         ],
+       
     ],
 
     /*
