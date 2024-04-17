@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ParentCategory extends Model
+class ParentCategory extends BaseModel
 {
     use HasFactory;
  protected $fillable = [
@@ -18,4 +18,7 @@ class ParentCategory extends Model
     {
         return $this->hasMany(Category::class);
     }
+     function getImageUrlAttribute(){
+        $this->getFile();
+     }
 }

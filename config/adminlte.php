@@ -332,11 +332,11 @@ return [
             'submenu' => [
                 [
                     'text' => 'Add New',
-                    'url'  => '/parent-activity/add',
+                    'url' => '/parent-category/create',
                 ],
                 [
                     'text' => 'View',
-                    'url'  => '/parent-activity',
+                    'url' => '/parent-category',
                 ],
             
             ],
@@ -349,7 +349,7 @@ return [
             'submenu' => [
                 [
                     'text' => 'Add New',
-                    'url'  => '/category/add',
+                    'url' => '/category/create',
                 ],
                 [
                     'text' => 'View',
@@ -365,7 +365,7 @@ return [
             'submenu'=>[
                 [
                     'text' => 'Add New',
-                    'url'  => '/product/add',
+                    'url' => '/product/create',
                 ],
                 [
                     'text' => 'View',
@@ -489,6 +489,16 @@ return [
                     'type' => 'js',
                     'asset' => false,
                     'location' => '//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js',
+                ],
+            ],
+        ],
+        'BsCustomFileInput' => [
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'js',
+                    'asset' => true,
+                    'location' => 'vendor/bs-custom-file-input/bs-custom-file-input.min.js',
                 ],
             ],
         ],

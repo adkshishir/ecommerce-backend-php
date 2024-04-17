@@ -16,7 +16,6 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained();
             $table->string("nickname")->nullable();
             $table->string('bio')->nullable();
-            $table->string('avatar')->nullable();
             $table->timestamps();
         });
     }
